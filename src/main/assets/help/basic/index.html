@@ -1,0 +1,224 @@
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Basic Help</title>
+
+    <link rel="stylesheet" type="text/css" href="snippet/tirhuta.css">
+
+<!-- @cleanStart@ -->
+
+<style type="text/css">
+.kb-footer{
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+}
+
+.kb-footer > div{
+	width: 33%;
+	display: inline-block;
+	text-align: center;
+	float: left;
+	padding: 10px 0px;
+}
+
+.kb-footer #kb-footer-label{
+	margin-top: 10px;
+}
+
+
+
+.kb-footer #kb-footer-pre, .kb-footer #kb-footer-next{
+	border-radius: 10px;
+	font-size: 1.5em;
+	display: inline;
+    padding: 10px 20px;
+	/*@label-color@*/
+}
+
+.kb-footer #kb-footer-pre:ACTIVE, .kb-footer #kb-footer-next:ACTIVE{
+	background: #ccc;
+}
+</style>
+
+<script type="text/javascript">
+var pages = [];
+var currentPage = 0;
+document.addEventListener('DOMContentLoaded', function() {
+	pages = document.getElementsByClassName("page");
+	for ( var i = 0; i < pages.length; i++) {
+		pages[i].style.display = "none";
+	}
+
+	document.getElementById('kb-footer-label').textContent = (currentPage + 1)
+			+ "/" + pages.length
+
+	pages[currentPage].style.display = "block";
+	/* if(jsInterface){
+		jsInterface.setNumberOfPages(pages.length);
+	} */
+
+	document.getElementById('kb-footer-pre').addEventListener('click',
+			function() {
+				showPrevousPage();
+			});
+
+	document.getElementById('kb-footer-next').addEventListener('click',
+			function() {
+				showNextPage()
+			});
+
+}, false);
+
+function showPrevousPage() {
+	if (currentPage > 0) {
+		pages[currentPage].style.display = "none";
+		currentPage--;
+		pages[currentPage].style.display = "block";
+		document.getElementById('kb-footer-label').textContent = (currentPage + 1)
+				+ "/" + pages.length
+	}
+}
+
+function showNextPage() {
+	if (currentPage < pages.length - 1) {
+		pages[currentPage].style.display = "none";
+		currentPage++;
+		pages[currentPage].style.display = "block";
+		document.getElementById('kb-footer-label').textContent = (currentPage + 1)
+				+ "/" + pages.length
+	}
+}
+
+</script>
+
+<!-- @cleanEnd@ -->
+
+<style type="text/css">
+
+body .header, body .content {
+	padding: 10px 15px;
+}
+
+h3 {
+	margin: 5px 0px;
+	/*@label-color@*/
+}
+
+ul{
+    line-height: 1.4;
+    list-style: none;
+    padding-left: 0;
+}
+
+ul > li {
+    padding-top:10px;
+    padding-top:10px;
+}
+
+.header{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+
+.content{
+	position: absolute;
+	top: 50px;
+	bottom: 50px;
+	overflow: auto;
+}
+
+img.cover{
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 1px 1px 8px #aaa;
+}
+
+b{
+    display: inline-block;
+}
+
+.tirhuta{
+    font-family: tirhuta;
+}
+
+</style>
+
+
+</head>
+<body>
+
+	<div class="content">
+        <div class="page">
+            <div class="header">
+                <h3>Settings</h3>
+            </div>
+            <ul>
+                <li>Touch <b>&#x2699;</b> for settings options. </li>
+
+                <li>Keyboards can be selected from <b>&#x2699; &#x203A; Keyboards</b>. Input methods can be selected from keyboard tab.</li>
+                <li>Select input preferences from <b>&#x2699; &#x203A; Input</b>.</li>
+
+                <li>To change the color of keyboard, go to <b>&#x2699; &#x203A; Display</b> and select colors.
+                    Keyboard's header and background support transparency.</li>
+            </ul>
+            <div class='tirhuta'>&#x114A7;&#x114BB;&#x1149F;&#x114B1;&#x114AA;&#x114B2; - &#x114A7;&#x114B1;&#x1149F;&#x114B1;&#x114AA;&#x114B0;</div>
+
+        </div>
+
+		<div class="page">
+
+            <div class="header">
+                <h3>Keyboards</h3>
+            </div>
+            <br/>
+
+            Select keyboards in <b>&#x2699; &#x203A; Keyboards</b>. Minimum two and maximum five keyboards can be selected.
+            <br/><br/>
+            Touch on the keyboard tab in options view to select the keyboards.
+            Double tap the active keyboards for input methods.
+            <br /><br/>
+            If options view is not visible, swipe up to show options view.
+            <br/>
+            Long press/touch the Keyboard switch key, at the bottom-left, to show options view.
+
+        </div>
+		<div class="page">
+            <div class="header">
+                <h3>Swipes</h3>
+            </div>
+            <ul>
+                <li>Swipe down to hide keyboard.</li>
+                <li>Swipe left to delete last character.</li>
+                <li>If options view is showing, swipe right to show settings.</li>
+                <li>If suggestions are showing, swipe right to select default selection.</li>
+                <li>Swipe up to show options view.</li>
+            </ul>
+
+
+        </div>
+		
+
+	</div>
+<!-- @cleanStart@ -->
+
+<div class="kb-footer">
+	<div>
+		<div id="kb-footer-pre">&#x25C0;</div>
+	</div>
+	<div id="kb-footer-label"></div>
+	<div>
+		<div id="kb-footer-next">&#x25B6;</div>
+	</div>
+</div>
+
+<!-- @cleanEnd@ -->
+	
+</body>
+</html>

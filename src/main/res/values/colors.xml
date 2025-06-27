@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* 
+**
+** Copyright 2008, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License"); 
+** you may not use this file except in compliance with the License. 
+** You may obtain a copy of the License at 
+**
+**     http://www.apache.org/licenses/LICENSE-2.0 
+**
+** Unless required by applicable law or agreed to in writing, software 
+** distributed under the License is distributed on an "AS IS" BASIS, 
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+** See the License for the specific language governing permissions and 
+** limitations under the License.
+*/
+-->
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="candidate_normal">#FF000000</color>
+    <color name="candidate_recommended">#000000</color>
+    <color name="candidate_other">#ff808080</color>
+    <color name="settings_background">#ff808080</color>
+    <color name="candidate_background">#bbffffff</color>
+    <color name="colorDarkGrey">#FF444444</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorWhiteGrey">#eeeeee</color>
+    <color name="colorWhiteGreyD">#dddddd</color>
+    <color name="colorWhiteGreyC">#ffcccccc</color>
+    
+    <color name="BorderLight">#ffcccccc</color>
+    <color name="SettingsBackground">#ffffffff</color>
+    
+    <color name="colorWhiteGreyA">#ffaaaaaa</color>
+    <color name="colorSkyBlue">#ff0059b3</color>
+    <color name="teal">#ff009688</color>
+    
+    <color name="darkLayer">#22000000</color>
+    <color name="lightLayer">#22ffffff</color>
+</resources>

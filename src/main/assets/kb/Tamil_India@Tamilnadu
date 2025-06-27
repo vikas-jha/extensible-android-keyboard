@@ -1,0 +1,41 @@
+{
+	"@class":"com.example.extkeyboard.serde.JsonKeyBoard",
+	"name": "\u0C24\u0C46\u0C32\u0C41\u0C17\u0C41 - \u0C2D\u0C3E\u0C30\u0C23",
+	"baseBoard":"qwerty",
+	"boardType":"Indic",
+	"language":"ta-IN",
+	"customDraw":true,
+    "textSize":"small",
+	"keys":[
+             {"id":"113","codes":"0x0BCC","label":"\u0BCC","popupCharacters":"\u0B94"},
+             {"id":"119","codes":"0x0BC8","label":"\u0BC8","popupCharacters":"\u0B90"},
+             {"id":"101","codes":"0x0BC0","label":"\u0BC0","popupCharacters":"\u0B88"},
+             {"id":"114","codes":"0x0B82","label":"\u0B82","popupCharacters":"\u0B85"},
+             {"id":"116","codes":"0x0BC2","label":"\u0BC2","popupCharacters":"\u0B8A"},
+
+             {"id":"121","codes":"0x0B9A","label":"\u0B9A","popupCharacters":"\u0B9E"},
+             {"id":"117","codes":"0x0B9C","label":"\u0B9C","popupCharacters":""},
+             {"id":"105","codes":"0x0B83","label":"\u0B83","popupCharacters":""},
+             {"id":"111","codes":"-1025","label":"\u0BF0\u0BF1","popupCharacters":"", "keyHints":"\u0BD0,\u0BF0,\u0BF1,\u0BF2,\u0BF3,\u0BF4,\u0BF5,\u0BF6,\u0BF7,\u0BF8,\u0BF9,\u0BFA"},
+             {"id":"112","codes":"8377,-1026","label":"\u20B9","popupCharacters":"\u0BE7\u0BE8", "keyHints":"\u0BE7,\u0BE8,\u0BE9,\u0BEA,\u0BEB,\u0BEC,\u0BED,\u0BEE,\u0BEF,\u0BE6"},
+
+             {"id":"97","codes":"0x0BCB","label":"\u0BCB","popupCharacters":"\u0B93"},
+             {"id":"115","codes":"0x0BC7","label":"\u0BC7","popupCharacters":"\u0B8F"},
+             {"id":"100","codes":"0x0BBF","label":"\u0BBF","popupCharacters":"\u0B87"},
+             {"id":"102","codes":"0x0BBE","label":"\u0BBE","popupCharacters":"\u0B86"},
+             {"id":"103","codes":"0x0BC1","label":"\u0BC1","popupCharacters":"\u0B89"},
+             {"id":"104","codes":"0x0BAA","label":"\u0BAA","popupCharacters":"\u0BAE"},
+             {"id":"106","codes":"0x0B95","label":"\u0B95","popupCharacters":"\u0B99"},
+             {"id":"107","codes":"0x0BA4","label":"\u0BA4","popupCharacters":"\u0BA8"},
+             {"id":"108","codes":"0x0B9F","label":"\u0B9F","popupCharacters":"\u0BA3"},
+
+             {"id":"122","codes":"0x0BCA","label":"\u0BCA","popupCharacters":"\u0B92"},
+             {"id":"120","codes":"0x0BC6","label":"\u0BC6","popupCharacters":"\u0B8E"},
+
+             {"id":"99","codes":"0x0BCD","label":"\u0BCD","popupCharacters":""},
+             {"id":"118","codes":"0x0BAF","label":"\u0BAF","popupCharacters":"\u0BB2"},
+             {"id":"98","codes":"0x0BB0","label":"\u0BB0","popupCharacters":"\u0BB5"},
+             {"id":"110","codes":"0x0BB6","label":"\u0BB6","popupCharacters":"\u0BB7"},
+             {"id":"109","codes":"0x0BB8","label":"\u0BB8","popupCharacters":"\u0BB9"}
+	 ]
+}

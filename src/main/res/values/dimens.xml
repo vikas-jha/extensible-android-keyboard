@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* 
+**
+** Copyright 2008, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License"); 
+** you may not use this file except in compliance with the License. 
+** You may obtain a copy of the License at 
+**
+**     http://www.apache.org/licenses/LICENSE-2.0 
+**
+** Unless required by applicable law or agreed to in writing, software 
+** distributed under the License is distributed on an "AS IS" BASIS, 
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+** See the License for the specific language governing permissions and 
+** limitations under the License.
+*/
+-->
+
+<resources>
+
+    <dimen name="key_height">52dip</dimen>
+    <dimen name="key_height_numeric">61dip</dimen>
+    <dimen name="candidate_font_height">18dip</dimen>
+    <dimen name="emoji_font_height">20dip</dimen>
+    <dimen name="candidate_vertical_padding">16dp</dimen>
+    <dimen name="candidate_text_height">12dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <dimen name="multichar_text_height">14dp</dimen>
+    <dimen name="emoji_text_height">20dp</dimen>
+    <dimen name="key_text_size_default">20dp</dimen>
+    <dimen name="key_text_size_large">30dp</dimen>
+    
+    <!-- keyboard settings dimensions -->
+    <dimen name="kbs_switch_padding">20sp</dimen>
+    <dimen name="kbs_group_label_padding">10sp</dimen>
+    <dimen name="kbs_default_font_size">17sp</dimen>
+
+</resources>

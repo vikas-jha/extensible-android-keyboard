@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/help_header_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|start"
+        android:background="@android:color/black"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:id="@+id/help_header_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|start"
+            android:layout_margin="@dimen/kbs_group_label_padding"
+            android:text="@string/empty"
+            android:background="@drawable/arrow_back" />
+
+        <TextView
+            android:id="@+id/help_header_lablel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical|start"
+            android:layout_weight="1"
+            android:padding="@dimen/kbs_switch_padding"
+            android:paddingLeft="0dp"
+            android:text="Settings"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+    </LinearLayout>
+    
+    <WebView 
+    android:id="@+id/help_webview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+/>
+    
+</LinearLayout>

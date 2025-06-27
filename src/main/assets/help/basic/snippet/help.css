@@ -1,0 +1,32 @@
+.kb-footer{
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+}
+
+.kb-footer > div{
+	width: 33%;
+	display: inline-block;
+	text-align: center;
+	float: left;
+	padding: 10px 0px;
+}
+
+.kb-footer #kb-footer-label{
+	margin-top: 10px;
+}
+
+
+
+.kb-footer #kb-footer-pre, .kb-footer #kb-footer-next{
+	border-radius: 10px;
+	font-size: 1.5em;
+	display: inline;
+    padding: 10px 20px;
+	/*@label-color@*/
+}
+
+.kb-footer #kb-footer-pre:ACTIVE, .kb-footer #kb-footer-next:ACTIVE{
+	background: #ccc;
+}

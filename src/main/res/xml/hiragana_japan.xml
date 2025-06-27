@@ -1,0 +1,45 @@
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="20%p"
+    android:horizontalGap="0px"
+    android:verticalGap="0px"
+    android:keyHeight="@dimen/key_height" lang="ja_JP#hiragana" symbol="&#x3072;&#x3089;" boardType="Kana" >
+
+    <Row>
+        <Key android:codes="0" android:keyLabel=" " android:keyEdgeFlags="left"/>
+		<Key android:codes="0x3042" android:keyLabel="&#x3042;" suggestions="&#x3044;,&#x3046;,&#x3048;,&#x304A;" />
+		<Key android:codes="0x304B" android:keyLabel="&#x304B;" suggestions="&#x304D;,&#x304F;,&#x3051;,&#x3053;" />
+		<Key android:codes="0x3055" android:keyLabel="&#x3055;" suggestions="&#x3057;,&#x3059;,&#x305B;,&#x305D;" />
+		<Key android:codes="0" android:keyLabel=" " android:keyEdgeFlags="right"/>
+    </Row>
+    <Row>
+        <Key android:codes="0" android:keyLabel=" " android:keyEdgeFlags="left"/>
+		<Key android:codes="0x305F" android:keyLabel="&#x305F;" suggestions="&#x3061;,&#x3064;,&#x3066;,&#x3068;" />
+		<Key android:codes="0x306A" android:keyLabel="&#x306A;" suggestions="&#x306B;,&#x306C;,&#x306D;,&#x306E;" />
+		<Key android:codes="0x306F" android:keyLabel="&#x306F;" suggestions="&#x3072;,&#x3075;,&#x3078;,&#x307B;" />
+		<Key android:codes="32" android:keyLabel="&#x23B5;" android:isRepeatable="true" android:keyEdgeFlags="right"/>
+    </Row>
+    <Row>
+        <Key android:codes="44,-9786"  android:keyLabel="," android:popupCharacters="&#x263A;" android:keyEdgeFlags="left"/>
+		<Key android:codes="0x307E" android:keyLabel="&#x307E;" suggestions="&#x307F;,&#x3080;,&#x3081;,&#x3082;"/>
+		<Key android:codes="0x3084" android:keyLabel="&#x3084;" suggestions="0,&#x3086;,0,&#x3088;"/>
+		<Key android:codes="0x3089" android:keyLabel="&#x3089;" suggestions="&#x308A;,&#x308B;,&#x308C;,&#x308D;"/>
+		<Key android:codes="-5" android:keyLabel="&#9003;" android:keyEdgeFlags="right"
+                android:isRepeatable="true"/>
+    </Row>
+    
+    <Row android:rowEdgeFlags="bottom">
+		<Key android:codes="-104" android:keyLabel="ABC" 
+                android:keyEdgeFlags="left"/>
+		<Key android:codes="-101" android:keyIcon="@drawable/sym_keyboard_language_switch" />
+		<Key android:codes="0x308F" android:keyLabel="&#x308F;" suggestions="&#x3092;,&#x3093;,&#x30FC;,&#x309D;"/>
+		<Key android:codes="12441,12442" android:keyLabel="&#x3099;  &#032;  &#x309A;" suggestions="&#x3063;,&#x3083;,&#x3085;,&#x3087;"/>
+		<Key android:codes="10" android:keyIcon="@drawable/sym_keyboard_return" 
+                android:keyEdgeFlags="right"/>
+    </Row>
+    
+    <!-- <Key android:codes="-1" android:keyIcon="@drawable/sym_keyboard_shift" 
+                android:keyWidth="15%p" android:isModifier="true"
+                android:isSticky="true" android:keyEdgeFlags="left"/> -->
+    
+</Keyboard>
+    

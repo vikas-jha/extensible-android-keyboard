@@ -1,0 +1,390 @@
+[
+	{
+		"@class":"com.example.extkeyboard.InputProvider",
+		"name":"English",
+		"symbol":"ABC",
+		"enabled": true,
+		"handlers":[
+			{
+				"name":"English - US",
+				"baseBoard": "qwerty",
+				"locale": "en-US",
+				"id":"en-US"
+			},
+          {
+            "name":"English - US & Numbers",
+            "baseBoard": "qwerty_number",
+            "locale": "en-US",
+            "id":"en-US#Numbers"
+          }
+		]
+	},
+	{
+		"@class":"com.example.extkeyboard.InputProvider",
+		"name":"Symbols",
+		"symbol":"123",
+		"enabled": true,
+		"handlers":[
+			{
+				"name":"Symbols",
+				"baseBoard": "symbols",
+				"id":"symbols",
+				"shiftedKb":"symbols-shifted"
+			},
+			{
+				"name":"More Symbols",
+				"baseBoard": "symbols_shift",
+				"id":"symbols-shifted",
+                "hidden": true
+			}
+		]
+	},
+	{
+		"@class":"com.example.extkeyboard.InputProvider",
+		"name":"\u0939\u093F\u0928\u094D\u0926\u0940",
+		"symbol":"\u0939\u093F\u0928\u094D\u0926\u0940",
+		"enabled": true,
+		"handlers":[
+			{
+				"name":"\u0939\u093F\u0928\u094D\u0926\u0940 - \u092D\u093E\u0930\u0924",
+				"baseBoard": "hindi_india",
+				"locale": "hi-IN",
+				"id":"hi-IN#devnagari"
+			},
+          {
+            "name":"Hindi - \u0939\u093F\u0928\u094D\u0926\u0940",
+            "baseBoard": "qwerty",
+            "locale": "hi-IN",
+            "transliterator":"in.en=hi",
+            "id":"en-hi#latin"
+          },
+          {
+            "name":"\u0CB9\u0CBF\u0CA8\u0CCD\u0C96\u0CC0 - \u0939\u093F\u0928\u094D\u0926\u0940",
+            "configuration": "Kannada_India@Karnataka",
+            "locale": "hi-IN",
+            "transliterator":"in.kn=hi",
+            "id":"kn-hi#kannada"
+          }
+		]
+	},
+  {
+    "name":"\u0938\u0902\u0938\u094D\u0915\u0943\u0924\u092E\u094D",
+    "symbol":"\u0938\u0902\u0938\u094D\u0915\u0943\u0924\u092E\u094D",
+    "enabled": true,
+    "id":"Sanskrit",
+    "handlers":[
+      {
+        "name":"\u0938\u0902\u0938\u094D\u0915\u0943\u0924\u092E\u094D - \u092D\u093E\u0930\u0924\u092E\u094D",
+        "baseBoard": "hindi_india",
+        "locale": "sa-IN",
+        "id":"sa-IN"
+      }
+    ]
+  },
+	{
+		"@class":"com.example.extkeyboard.InputProvider",
+		"name":"\u0627\u064F\u0631\u062F\u064F\u0648",
+		"symbol":"\u0627\u064F\u0631\u062F\u064F\u0648",
+		"enabled": true,
+		"handlers":[
+			{
+				"name":"\u0627\u064F\u0631\u062F\u064F\u0648",
+				"baseBoard": "urdu",
+				"locale": "ur-IN",
+				"id":"urdu#Arabic"
+			}
+		]
+	},
+	{
+		"@class":"com.example.extkeyboard.InputProvider",
+		"name":"\u1112\u1165\u11AB\u1100\u116E\u11AF",
+		"symbol":"\u1112\u1165\u11AB\u1100\u116E\u11AF",
+		"enabled": true,
+		"handlers":[
+			{
+				"name":"\u1112\u1165\u11AB\u1100\u116E\u11AF - \u1112\u1165\u11AB\u1100\u116E\u11A8",
+				"baseBoard": "hangul_korea",
+				"locale": "ko-KR",
+				"id":"ko-KR#Hangul"
+			}
+		]
+	},
+
+  {
+    "name":"\u0627\u0644\u0639\u064E\u0631\u064E\u0628\u0650\u064A\u064E\u0651\u0629",
+    "symbol":"\u0627\u0644\u0639\u064E\u0631\u064E\u0628\u0650\u064A\u064E\u0651\u0629",
+    "enabled": true,
+    "id":"Arabic",
+    "handlers":[
+      {
+        "name":"\u0627\u0644\u0639\u064E\u0631\u064E\u0628\u0650\u064A\u064E\u0651\u0629",
+        "baseBoard": "arabic",
+        "locale": "ar-SA",
+        "id":"ar-SA@Arab"
+      }
+    ]
+  },
+  {
+    "name":"\u05E2\u05D1\u05E8\u05D9\u05EA",
+    "symbol":"\u05E2\u05D1\u05E8\u05D9\u05EA",
+    "enabled": true,
+    "id":"Hebrew",
+    "handlers":[
+      {
+        "name":"\u05E2\u05D1\u05E8\u05D9\u05EA - \u05D9\u05B4\u05E9\u05B0\u05C2\u05E8\u05B8\u05D0\u05B5\u05DC",
+        "configuration": "Hebrew_Israel",
+        "locale": "he-IL",
+        "id":"he-IL"
+      }
+    ]
+  },
+
+  {
+    "name":"\u0395\u03BB\u03BB\u03B7\u03BD\u03B9\u03BA\u03AC",
+    "symbol":"\u03B1\u03B2\u03B3",
+    "enabled": true,
+    "id":"Greek",
+    "handlers":[
+      {
+        "name":"\u0395\u03BB\u03BB\u03B7\u03BD\u03B9\u03BA\u03AC - \u0395\u03BB\u03BB\u03B7\u03BD\u03B9\u03BA\u03AE",
+        "configuration": "Greek_Greece",
+        "locale": "el-GR",
+        "id":"el-GR"
+      }
+    ]
+  },
+
+	{
+		"@class":"com.example.extkeyboard.InputProvider",
+		"name":"\u65E5\u672C\u8A9D",
+		"symbol":"\u65E5\u672C\u8A9D",
+		"symbol-alt":"\u3072\u3089",
+		"enabled": true,
+		"handlers":[
+			{
+				"name":"\u3072\u3089\u304C\u306A",
+				"baseBoard": "hiragana_japan",
+				"locale": "ja-JP",
+				"id":"ja-JP#hiragana"
+			},
+			{
+				"name":"\u30AB\u30BF\u30AB\u30CA",
+				"configuration": "Japanese_Japan#Katakana",
+				"locale": "ja-JP",
+				"id":"ja-JP#katakana"
+			}
+		]
+	},
+	{
+		"@class":"com.example.extkeyboard.InputProvider",
+		"name":"\u09AC\u09BE\u0982\u09B2\u09BE",
+		"symbol":"\u09AC\u09BE\u0982\u09B2\u09BE",
+		"enabled": true,
+		"handlers":[
+			{
+				"name":"\u09AC\u09BE\u0982\u09B2\u09BE - \u09AD\u09BE\u09B0\u09A3",
+				"configuration": "Bengali_India#Bangla@Bengal",
+				"locale": "bn-IN",
+				"id":"bn-IN@Bengal"
+			}
+		]
+	},
+  {
+    "@class":"com.example.extkeyboard.InputProvider",
+    "name":"\u0C24\u0C46\u0C32\u0C41\u0C17\u0C41",
+    "symbol":"\u0C24\u0C46\u0C32\u0C41\u0C17\u0C41",
+    "enabled": true,
+    "handlers":[
+      {
+        "name":"\u0C24\u0C46\u0C32\u0C41\u0C17\u0C41 - \u0C2D\u0C3E\u0C30\u0C23",
+        "configuration": "Telugu_India",
+        "locale": "te-IN",
+        "id":"te-IN"
+      }
+    ]
+  },
+  {
+    "@class":"com.example.extkeyboard.InputProvider",
+    "name":"\u0BA4\u0BAE\u0BBF\u0BB4\u0BCD",
+    "symbol":"\u0BA4\u0BAE\u0BBF\u0BB4\u0BCD",
+    "enabled": true,
+    "handlers":[
+      {
+        "name":"\u0BA4\u0BAE\u0BBF\u0BB4\u0BCD - \u0BAA\u0BBE\u0BB0\u0BA3",
+        "configuration": "Tamil_India@Tamilnadu",
+        "locale": "ta-IN",
+        "id":"ta-IN@Tamilnamdu"
+      }
+    ]
+  },
+  {
+    "@class":"com.example.extkeyboard.InputProvider",
+    "name":"\u0C95\u0CA8\u0CCD\u0CA8\u0CA1",
+    "symbol":"\u0C95\u0CA8\u0CCD\u0CA8\u0CA1",
+    "enabled": true,
+    "handlers":[
+      {
+        "name":"\u0C95\u0CA8\u0CCD\u0CA8\u0CA1 - \u0CAD\u0CBE\u0CB0\u0CA4",
+        "configuration": "Kannada_India@Karnataka",
+        "locale": "kn-IN",
+        "id":"kn-IN@Karnataka"
+      },
+      {
+        "name":"\u0939\u093F\u0928\u094D\u0926\u0940 - \u0C95\u0CA8\u0CCD\u0CA8\u0CA1",
+        "baseBoard": "hindi_india",
+        "locale": "kn-IN",
+        "id":"kn-IN@hindi",
+        "transliterator":"in.hi=kn"
+      }
+    ]
+  },
+  {
+    "@class":"com.example.extkeyboard.InputProvider",
+    "name":"\u0A97\u0AC1\u0A9C\u0AB0\u0ABE\u0AA4\u0AC0",
+    "symbol":"\u0A97\u0AC1\u0A9C\u0AB0\u0ABE\u0AA4\u0AC0",
+    "enabled": true,
+    "handlers":[
+      {
+        "name":"\u0A97\u0AC1\u0A9C\u0AB0\u0ABE\u0AA4\u0AC0 - \u0AAD\u0ABE\u0AB0\u0AA3",
+        "configuration": "Gujrati_India@Gujrat",
+        "locale": "gu-IN",
+        "id":"gu-IN@Gujrat"
+      }
+    ]
+  },
+  {
+    "@class":"com.example.extkeyboard.InputProvider",
+    "name":"\u0D2E\u0D32\u0D2F\u0D3E\u0D33\u0D02",
+    "symbol":"\u0D2E\u0D32\u0D2F\u0D3E\u0D33\u0D02",
+    "enabled": true,
+    "handlers":[
+      {
+        "name":"\u0D2E\u0D32\u0D2F\u0D3E\u0D33\u0D02 - \u0D2D\u0D3E\u0D30\u0D23",
+        "configuration": "Malayalam_India@Kerala",
+        "locale": "ml-IN",
+        "id":"ml-IN@Kerala"
+      }
+    ]
+  },
+  {
+    "@class":"com.example.extkeyboard.InputProvider",
+    "name":"\u0B13\u0B21\u0B3C\u0B3F\u0B06",
+    "symbol":"\u0B13\u0B21\u0B3C\u0B3F\u0B06",
+    "enabled": true,
+    "handlers":[
+      {
+        "name":"\u0B2E\u0B32\u0B2F\u0B3E\u0B33\u0B02 - \u0B2D\u0B3E\u0B30\u0B23",
+        "configuration": "Odiya_India@Odisa",
+        "locale": "or-IN",
+        "id":"or-IN@Odisa"
+      }
+    ]
+  },
+  {
+    "@class":"com.example.extkeyboard.InputProvider",
+    "name":"\u0A2A\u0A70\u0A1C\u0A3E\u0A2C\u0A40",
+    "symbol":"\u0A2A\u0A70\u0A1C\u0A3E\u0A2C\u0A40",
+    "enabled": true,
+    "handlers":[
+      {
+        "name":"\u0A2A\u0A70\u0A1C\u0A3E\u0A2C\u0A40 - \u0A2D\u0A3E\u0A30\u0A23",
+        "configuration": "Punjabi_India@Punjab",
+        "locale": "pu-IN",
+        "id":"pu-IN@Punjab"
+      }
+    ]
+  },
+  {
+    "@class":"com.example.extkeyboard.InputProvider",
+    "name":"\u0440\u0443\u0441\u0441\u043A\u0438\u0439",
+    "symbol":"\u0410\u0411\u0412",
+    "enabled": true,
+    "handlers":[
+      {
+        "name":"Russian - Russia",
+        "baseBoard": "cyrillic",
+        "locale": "ru-RU",
+        "id":"ru-RU"
+      }
+    ]
+  },
+  {
+    "@class":"com.example.extkeyboard.InputProvider",
+    "name":"\u0E44\u0E17\u0E22",
+    "symbol":"\u0E44\u0E17\u0E22",
+    "enabled": true,
+    "handlers":[
+      {
+        "name":"Thai",
+        "baseBoard": "thai",
+        "locale": "th-TH",
+        "id":"th-TH"
+      }
+    ]
+  },
+  {
+    "@class":"com.example.extkeyboard.InputProvider",
+    "name":"Maithili",
+    "symbol":"Maithili",
+    "enabled": false,
+    "handlers":[
+      {
+        "name":"Maithili",
+        "baseBoard": "mai_in",
+        "locale": "mai-IN",
+        "id":"mai-IN@Mithila"
+      }
+    ]
+  },
+  {
+    "@class":"com.example.extkeyboard.InputProvider",
+    "name":"\u6f22\u8a9e",
+    "symbol":"\u6f22\u8a9e",
+    "enabled": true,
+    "handlers":[
+      {
+        "name":"\u6c49\u8bed \u62fc\u97f3",
+        "baseBoard": "qwerty",
+        "locale": "zh-CN",
+        "id":"zh-CN@China",
+        "transliterator":"cjk.en=zh"
+      }
+    ]
+  },
+  {
+    "@class":"com.example.extkeyboard.InputProvider",
+    "name":"\uA997\uA9AE",
+    "symbol":"\uA997\uA9AE",
+    "enabled": true,
+    "handlers":[
+      {
+        "name":"\uA9A7\uA9B1\uA997\uA9AE",
+        "configuration": "Javanese_Indonesia",
+        "locale": "jv-ID",
+        "id":"jv-ID@Indonesia"
+
+      }
+    ]
+  },
+  {
+    "name":"\u092E\u0948\u0925\u093F\u0932\u0940",
+    "symbol":"\u092E\u0948\u0925\u093F\u0932\u0940",
+    "enabled": true,
+    "id":"Maithili",
+    "handlers":[
+      {
+        "name":"\u092E\u0948\u0925\u093F\u0932\u0940 - \u092D\u093E\u0930\u0924",
+        "baseBoard": "hindi_india",
+        "locale": "mai-IN",
+        "id":"mai-IN@Mithila"
+      },
+      {
+        "name":"\uD805\uDCA7\uD805\uDCBB\uD805\uDC9F\uD805\uDCB1\uD805\uDCAA\uD805\uDCB2 - \uD805\uDCA7\uD805\uDCB1\uD805\uDC9F\uD805\uDCB1\uD805\uDCAA\uD805\uDCB0",
+        "configuration": "Maithili_India@Mithila",
+        "locale": "mai-IN",
+        "id":"mai-IN@Mithila#Tirhuta",
+        "font":"Tirhuta.otf"
+      }
+    ]
+  }
+]

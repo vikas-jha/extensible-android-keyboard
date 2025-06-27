@@ -1,0 +1,9 @@
+{
+	"@class":"com.example.extkeyboard.serde.JsonKeyBoard",
+	"name": "\uD805\uDCA7\uD805\uDCBB\uD805\uDC9F\uD805\uDCB1\uD805\uDCAA\uD805\uDCB2 - \uD805\uDCA7\uD805\uDCB1\uD805\uDC9F\uD805\uDCB1\uD805\uDCAA\uD805\uDCB0",
+	"baseBoard":"mai_in",
+	"language":"mai-IN",
+	"customDraw":true,
+	"font"="Tirhuta.otf",
+	"keys":[ ]
+}

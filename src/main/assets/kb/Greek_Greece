@@ -1,0 +1,37 @@
+{
+	"@class":"com.example.extkeyboard.serde.JsonKeyBoard",
+	"name": "\u0395\u03BB\u03BB\u03B7\u03BD\u03B9\u03BA\u03AC - \u0395\u03BB\u03BB\u03B7\u03BD\u03B9\u03BA\u03AE",
+	"baseBoard":"qwerty",
+	"boardType":"Latin",
+	"language":"el-GR",
+	"keys":[
+                  {"id":"113","codes":"0x003B","label":"\u003B"},
+                  {"id":"119","codes":"0x03C2","label":"\u03C2"},
+                  {"id":"101","codes":"0x03B5","label":"\u03B5"},
+                  {"id":"114","codes":"0x03C1","label":"\u03C1"},
+                  {"id":"116","codes":"0x03C4","label":"\u03C4"},
+                  {"id":"121","codes":"0x03C5","label":"\u03C5"},
+                  {"id":"117","codes":"0x03B8","label":"\u03B8"},
+                  {"id":"105","codes":"0x03B9","label":"\u03B9"},
+                  {"id":"111","codes":"0x03BF","label":"\u03BF"},
+                  {"id":"112","codes":"0x03C0","label":"\u03C0"},
+
+                  {"id":"97", "codes":"0x03b1","label":"\u03b1"},
+                  {"id":"115","codes":"0x03c3","label":"\u03c3"},
+                  {"id":"100","codes":"0x03b4","label":"\u03b4"},
+                  {"id":"102","codes":"0x03c6","label":"\u03c6"},
+                  {"id":"103","codes":"0x03b3","label":"\u03b3"},
+                  {"id":"104","codes":"0x03b7","label":"\u03b7"},
+                  {"id":"106","codes":"0x03be","label":"\u03be"},
+                  {"id":"107","codes":"0x03ba","label":"\u03ba"},
+                  {"id":"108","codes":"0x03bb","label":"\u03bb"},
+
+                  {"id":"122","codes":"0x03b6","label":"\u03b6"},
+                  {"id":"120","codes":"0x03c7","label":"\u03c7"},
+                  {"id":"99", "codes":"0x03c8","label":"\u03c8"},
+                  {"id":"118","codes":"0x03c9","label":"\u03c9"},
+                  {"id":"98", "codes":"0x03b2","label":"\u03b2"},
+                  {"id":"110","codes":"0x03bd","label":"\u03bd"},
+                  {"id":"109","codes":"0x03bc","label":"\u03bc"}
+	 ]
+}

@@ -1,0 +1,89 @@
+{
+  "@class": "com.example.extkeyboard.serde.JsonSettings",
+  "label": "Settings",
+  "settings": [
+    {
+      "label": "Keyboards",
+      "id": "keyboards",
+      "renderer": "keyBoardPopulator",
+      "settings": [
+        {
+          "id": "English",
+          "label": "English",
+          "on": true
+        },
+        {
+          "id": "Symbols",
+          "label": "Symbols",
+          "on": true
+        }
+      ]
+    },
+    {
+      "label": "Input",
+      "id": "input",
+      "settingType": "header",
+      "settings": [
+        {
+          "id": "completion_on",
+          "label": "Suggest completions",
+          "on": true
+        },
+        {
+          "id": "prediction_on",
+          "label": "Predict word (N/A)",
+          "on": false
+        },
+        {
+          "id": "vibration_on",
+          "label": "Vibrate on key press",
+          "on": false
+        },
+        {
+          "id": "audio_on",
+          "label": "Sound on key press",
+          "on": false
+        },
+        {
+          "id": "double_space_period",
+          "label": "Double space period",
+          "on": true
+        },
+        {
+          "id": "flick_up_shift",
+          "label": "Flick up shift",
+          "on": true
+        },
+        {
+          "id": "preview_key_press",
+          "label": "Preview key press",
+          "on": true
+        }
+      ]
+    },
+    {
+      "label": "Display",
+      "id": "display",
+      "settings": [
+        {
+          "id": "kbs_color_key_txt",
+          "label": "Key text color",
+          "value": "0x444444",
+          "settingType": "color"
+        },
+        {
+          "id": "kbs_color_kb_head",
+          "label": "Header color",
+          "value": "0xffcccccc",
+          "settingType": "color"
+        },
+        {
+          "id": "kbs_color_kb_bg",
+          "label": "Background color",
+          "value": "0xffeeeeee",
+          "settingType": "color"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+[
+	{
+		"@class":"com.example.extkeyboard.InputProvider",
+		"name":"Numeric",
+		"symbol":"Numeric",
+		"enabled": false,
+		"handlers":[
+			{
+				"name":"Numeric",
+				"baseBoard": "numeric",
+				"id":"numeric"
+			}
+		]
+	},
+	{
+		"@class":"com.example.extkeyboard.InputProvider",
+		"name":"Keypad",
+		"symbol":"Keypad",
+		"enabled": false,
+		"handlers":[
+			{
+				"name":"Keypad",
+				"baseBoard": "keypad",
+				"id":"keypad"
+			}
+		]
+	}
+]

@@ -1,0 +1,19 @@
+{
+	"@class":"com.example.extkeyboard.serde.JsonKeyBoard",
+	"name": "Japanese - Japan",
+	"baseBoard":"hiragana_japan",
+	"language":"ja-JP",
+	"keys":[
+	                { "id":"0x3042"   ,   "codes":"0x30A2" ,"label":"\u30A2", "keyHints":"\u30A4,\u30A6,\u30A8,\u30AA" },
+                    { "id":"0x304B"   ,   "codes":"0x30AB" ,"label":"\u30AB", "keyHints":"\u30AD,\u30AF,\u30B1,\u30B3" },
+                    { "id":"0x3055"   ,   "codes":"0x30B5" ,"label":"\u30B5", "keyHints":"\u30B7,\u30B9,\u30BB,\u30BD" },
+                    { "id":"0x305F"   ,   "codes":"0x30BF" ,"label":"\u30BF", "keyHints":"\u30C1,\u30C4,\u30C6,\u30C8" },
+                    { "id":"0x306A"   ,   "codes":"0x30CA" ,"label":"\u30CA", "keyHints":"\u30CB,\u30CC,\u30CD,\u30CE" },
+                    { "id":"0x306F"   ,   "codes":"0x30CF" ,"label":"\u30CF", "keyHints":"\u30D2,\u30D5,\u30D8,\u30DB" },
+                    { "id":"0x307E"   ,   "codes":"0x30DE" ,"label":"\u30DE", "keyHints":"\u30DF,\u30E0,\u30E1,\u30E2"},
+                    { "id":"0x3084"   ,   "codes":"0x30E4" ,"label":"\u30E4", "keyHints":"0,\u30E6,0,\u30E8"},
+                    { "id":"0x3089"   ,   "codes":"0x30E9" ,"label":"\u30E9", "keyHints":"\u30EA,\u30EB,\u30EC,\u30ED"},
+                    { "id":"0x308F"   ,   "codes":"0x30EF" ,"label":"\u30EF", "keyHints":"\u30F2,\u30F3,\u30FC,\u30FD"},
+                    { "id":"12441,12442", "codes":"12441,12442", "label":"\u3099    \u309A", "keyHints":"\u30C3,\u30E3,\u30E5,\u30E7"}
+	]
+}

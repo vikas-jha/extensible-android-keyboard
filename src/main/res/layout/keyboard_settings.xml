@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:pikolo="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    android:padding="0dp"
+    android:textAlignment="viewEnd"
+    android:theme="@style/SettingsTheme" >
+
+    <LinearLayout
+        android:id="@+id/settings_header_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|start"
+        android:background="@android:color/black"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:id="@+id/settings_header_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|start"
+            android:layout_margin="@dimen/kbs_group_label_padding"
+            android:text="@string/empty"
+            android:background="@drawable/arrow_back" />
+
+        <TextView
+            android:id="@+id/settings_lablel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical|start"
+            android:layout_weight="1"
+            android:padding="@dimen/kbs_switch_padding"
+            android:paddingLeft="0dp"
+            android:text="Settings"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/kbs_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/kbs_scroll_child"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!--<TextView
+                android:id="@+id/kbs_label_keyboards"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/kbs_group_label_padding"
+                android:text="@string/settings_label_keyboards"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/teal" />
+
+            <LinearLayout
+                android:id="@+id/settings_kb_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/kbs_label_Input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/kbs_group_label_padding"
+                android:text="@string/settings_label_input"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/teal" />
+
+            <Switch
+                android:id="@+id/tb_predict"
+                android:layout_width="366dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/settings_border"
+                android:padding="@dimen/kbs_switch_padding"
+                android:text="Predict completion"
+                android:textSize="@dimen/kbs_default_font_size" />
+
+            <Switch
+                android:id="@+id/tb_vibrate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/settings_border"
+                android:padding="@dimen/kbs_switch_padding"
+                android:text="Vibrate on key press"
+                android:textSize="17sp" />
+
+            <Switch
+                android:id="@+id/tb_audio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/settings_border"
+                android:padding="@dimen/kbs_switch_padding"
+                android:text="Sound on key press"
+                android:textSize="17sp" />
+            <Switch
+                android:id="@+id/tb_double_space_period"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/settings_border"
+                android:padding="@dimen/kbs_switch_padding"
+                android:text="Double-space period"
+                android:textSize="17sp" />
+            <Switch
+                android:id="@+id/tb_flick_up_shift"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/settings_border"
+                android:padding="@dimen/kbs_switch_padding"
+                android:text="Flick up shift"
+                android:textSize="17sp" />
+
+            <Switch
+                android:id="@+id/tb_preview_key_press"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/settings_border"
+                android:padding="@dimen/kbs_switch_padding"
+                android:text="Preview Key Press"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/kbs_key_text_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/kbs_group_label_padding"
+                android:text="Key Text Color"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/teal"/>
+
+            <com.flask.colorpicker.ColorPickerView
+                android:id="@+id/kbs_cp_key_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:alphaSlider="true"
+                app:density="12"
+                app:lightnessSlider="true"
+                app:wheelType="FLOWER"
+                app:lightnessSliderView="@+id/kbs_cpl_key_text"
+                />
+
+            <com.flask.colorpicker.slider.LightnessSlider
+                android:id="@+id/kbs_cpl_key_text"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                />
+
+            <TextView
+                android:id="@+id/kbs_bg_color_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/kbs_group_label_padding"
+                android:text="KeyBoard Background Color"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/teal"/>
+
+
+
+            <com.flask.colorpicker.ColorPickerView
+                android:id="@+id/kbs_cp_kb_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:alphaSlider="true"
+                app:density="12"
+                app:lightnessSlider="true"
+                app:wheelType="FLOWER"
+                app:lightnessSliderView="@+id/kbs_cpl_kb_bg"
+                app:alphaSliderView="@+id/kbs_cpa_kb_bg"
+                />
+
+            <com.flask.colorpicker.slider.LightnessSlider
+                android:id="@+id/kbs_cpl_kb_bg"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                />
+
+
+
+            <com.flask.colorpicker.slider.AlphaSlider
+                android:id="@+id/kbs_cpa_kb_bg"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                />
+
+            <TextView
+                android:id="@+id/kbs_header_color_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/kbs_group_label_padding"
+                android:text="KeyBoard Header Color"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/teal"/>
+
+            <com.flask.colorpicker.ColorPickerView
+                android:id="@+id/kbs_cp_kb_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:alphaSlider="true"
+                app:density="12"
+                app:lightnessSlider="true"
+                app:wheelType="FLOWER"
+                app:lightnessSliderView="@+id/kbs_cpl_kb_head"
+                app:alphaSliderView="@+id/kbs_cpa_kb_head"
+                />
+
+            <com.flask.colorpicker.slider.LightnessSlider
+                android:id="@+id/kbs_cpl_kb_head"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                />
+
+            <com.flask.colorpicker.slider.AlphaSlider
+                android:id="@+id/kbs_cpa_kb_head"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                />
+
+
+-->
+
+
+        </LinearLayout>
+        
+        
+
+    </ScrollView>
+
+    
+
+</LinearLayout>
