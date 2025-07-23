@@ -52,7 +52,7 @@ To add a new language or layout:
 
 ## License
 
-This project is licensed under the Apache License, Version 2.0. See [LICENSE](https://www.apache.org/licenses/LICENSE-2.0) for details.
+See [LICENSE](license.md) for details.
 
 ## Author
 
